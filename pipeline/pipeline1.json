@@ -558,11 +558,518 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Sede de U.O.\"\"\"ZCSEDE:ZCSEDE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Sede de U.O.\"\"\"ZCSEDE:ZCSEDE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO:ZCNOMCO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO:ZCNOMCO",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Sexo\"\"\"0GENDER:0GENDER",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Sexo\"\"\"0GENDER:0GENDER",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Fecha nacimiento\"\"\"0BIRTHDAY:0BIRTHDAY",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Fecha nacimiento\"\"\"0BIRTHDAY:0BIRTHDAY",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Telefono 2\"\"\"ZCTELCELU:ZCTELCELU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Telefono 2\"\"\"ZCTELCELU:ZCTELCELU",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Episodio\"\"\"0HC_PATCASE:0HC_PATCASE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Episodio\"\"\"0HC_PATCASE:0HC_PATCASE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Prestación\"\"\"0HC_SERVICE:0HC_SERVICE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Prestación\"\"\"0HC_SERVICE:0HC_SERVICE",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Descripción breve\"\"\"1TXTSH:0TXTSH",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Descripción breve\"\"\"1TXTSH:0TXTSH",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0002:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0002:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Fecha de la entrada\"\"\"0HC_CREDATE:ZCNIERDAT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Fecha de la entrada\"\"\"0HC_CREDATE:ZCNIERDAT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Datos de fecha de una citación\"\"\"ZCTMNDT:0HC_DATEFRM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Datos de fecha de una citación\"\"\"ZCTMNDT:0HC_DATEFRM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Hora de inicio\"\"\"0HC_TIMEFRM:0HC_TIMEFRM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Hora de inicio\"\"\"0HC_TIMEFRM:0HC_TIMEFRM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Número de Autorización\"\"\"ZCAKTKZ:ZCAKTKZ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Número de Autorización\"\"\"ZCAKTKZ:ZCAKTKZ",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Nº correlativo de la prestación\"\"\"0HC_SRVSEQ:0HC_SRVSEQ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Nº correlativo de la prestación\"\"\"0HC_SRVSEQ:0HC_SRVSEQ",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Codigo Aseguradora  (IS-H)\"\"\"0HC_INSPROV:0HC_INSPRMN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Codigo Aseguradora  (IS-H)\"\"\"0HC_INSPROV:0HC_INSPRMN",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"IC: Número identificación\"\"\"0BP_ID_NUM:0BP_ID_NUM",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"IC: Número identificación\"\"\"0BP_ID_NUM:0BP_ID_NUM",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO0002:ZCNOMCO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO0002:ZCNOMCO",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0003:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0003:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Movimiento\"\"\"0HC_MOVEMNT:0HC_MOVEMNT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Movimiento\"\"\"0HC_MOVEMNT:0HC_MOVEMNT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"IS-H: Ind.edif.de una habitacion\"\"\"ZCZIMMR:ZCZIMMR",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"IS-H: Ind.edif.de una habitacion\"\"\"ZCZIMMR:ZCZIMMR",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Indicador de anulación\"\"\"0STORNO:0STORNO",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Indicador de anulación\"\"\"0STORNO:0STORNO",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Tipo de movimiento\"\"\"0HC_MOVECTG:0HC_MOVECTG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Tipo de movimiento\"\"\"0HC_MOVECTG:0HC_MOVECTG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Cl.movimiento\"\"\"0HC_MOVETP:0HC_MOVETP",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Cl.movimiento\"\"\"0HC_MOVETP:0HC_MOVETP",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Interlocutor comercial\"\"\"0HC_BPARTN:0HC_BPARTN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Interlocutor comercial\"\"\"0HC_BPARTN:0HC_BPARTN",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Unidad organizativa\"\"\"0HC_ORGUNIT:0HC_ORGUNIT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Unidad organizativa\"\"\"0HC_ORGUNIT:0HC_ORGUNIT",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"ESTADO\"\"\"EST:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"ESTADO\"\"\"EST:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"ORIGEN_INF\"\"\"FUENTE:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"ORIGEN_INF\"\"\"FUENTE:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Código de diagnóstico\"\"\"0HC_DIAGKEY:0HC_DIAGKEY",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Código de diagnóstico\"\"\"0HC_DIAGKEY:0HC_DIAGKEY",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Complemento de diagnóstico\"\"\"0HC_DIAADDI:0HC_DIAADDI",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Complemento de diagnóstico\"\"\"0HC_DIAADDI:0HC_DIAADDI",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Texto diagnóstico 1\"\"\"0HC_DIAGTX1:0HC_DIAGTX1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Texto diagnóstico 1\"\"\"0HC_DIAGTX1:0HC_DIAGTX1",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Texto diagnóstico 2\"\"\"0HC_DIAGTX2:0HC_DIAGTX2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Texto diagnóstico 2\"\"\"0HC_DIAGTX2:0HC_DIAGTX2",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0004:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0004:0TXTLG",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "atenciones_02",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				]
