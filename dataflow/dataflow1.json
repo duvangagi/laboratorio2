@@ -10,10 +10,21 @@
 						"type": "DatasetReference"
 					},
 					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "atenciones_02",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "union1"
+				}
+			],
 			"scriptLines": [
 				"source(output(",
 				"          {\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU} as string,",
@@ -59,7 +70,53 @@
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> source1"
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source(output(",
+				"          {\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU} as string,",
+				"          {\"\"\"Sede de U.O.\"\"\"ZCSEDE:ZCSEDE} as string,",
+				"          {\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE} as string,",
+				"          {\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM} as string,",
+				"          {\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG} as string,",
+				"          {\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT} as string,",
+				"          {\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT} as string,",
+				"          {\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP} as string,",
+				"          {\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM} as string,",
+				"          {\"\"\"Nombre completo\"\"\"ZCNOMCO:ZCNOMCO} as string,",
+				"          {\"\"\"Sexo\"\"\"0GENDER:0GENDER} as string,",
+				"          {\"\"\"Fecha nacimiento\"\"\"0BIRTHDAY:0BIRTHDAY} as string,",
+				"          {\"\"\"Telefono 2\"\"\"ZCTELCELU:ZCTELCELU} as string,",
+				"          {\"\"\"Episodio\"\"\"0HC_PATCASE:0HC_PATCASE} as string,",
+				"          {\"\"\"Prestación\"\"\"0HC_SERVICE:0HC_SERVICE} as string,",
+				"          {\"\"\"Descripción breve\"\"\"1TXTSH:0TXTSH} as string,",
+				"          {\"\"\"Descripción expl.\"\"\"1TXTLG0002:0TXTLG} as string,",
+				"          {\"\"\"Fecha de la entrada\"\"\"0HC_CREDATE:ZCNIERDAT} as string,",
+				"          {\"\"\"Datos de fecha de una citación\"\"\"ZCTMNDT:0HC_DATEFRM} as string,",
+				"          {\"\"\"Hora de inicio\"\"\"0HC_TIMEFRM:0HC_TIMEFRM} as string,",
+				"          {\"\"\"Número de Autorización\"\"\"ZCAKTKZ:ZCAKTKZ} as string,",
+				"          {\"\"\"Nº correlativo de la prestación\"\"\"0HC_SRVSEQ:0HC_SRVSEQ} as string,",
+				"          {\"\"\"Codigo Aseguradora  (IS-H)\"\"\"0HC_INSPROV:0HC_INSPRMN} as string,",
+				"          {\"\"\"IC: Número identificación\"\"\"0BP_ID_NUM:0BP_ID_NUM} as string,",
+				"          {\"\"\"Nombre completo\"\"\"ZCNOMCO0002:ZCNOMCO} as string,",
+				"          {\"\"\"Descripción expl.\"\"\"1TXTLG0003:0TXTLG} as string,",
+				"          {\"\"\"Movimiento\"\"\"0HC_MOVEMNT:0HC_MOVEMNT} as string,",
+				"          {\"\"\"IS-H: Ind.edif.de una habitacion\"\"\"ZCZIMMR:ZCZIMMR} as string,",
+				"          {\"\"\"Indicador de anulación\"\"\"0STORNO:0STORNO} as string,",
+				"          {\"\"\"Tipo de movimiento\"\"\"0HC_MOVECTG:0HC_MOVECTG} as string,",
+				"          {\"\"\"Cl.movimiento\"\"\"0HC_MOVETP:0HC_MOVETP} as string,",
+				"          {\"\"\"Interlocutor comercial\"\"\"0HC_BPARTN:0HC_BPARTN} as string,",
+				"          {\"\"\"Unidad organizativa\"\"\"0HC_ORGUNIT:0HC_ORGUNIT} as string,",
+				"          {\"\"\"ESTADO\"\"\"EST:0TXTLG} as string,",
+				"          {\"\"\"ORIGEN_INF\"\"\"FUENTE:0TXTLG} as string,",
+				"          {\"\"\"Código de diagnóstico\"\"\"0HC_DIAGKEY:0HC_DIAGKEY} as string,",
+				"          {\"\"\"Complemento de diagnóstico\"\"\"0HC_DIAADDI:0HC_DIAADDI} as string,",
+				"          {\"\"\"Texto diagnóstico 1\"\"\"0HC_DIAGTX1:0HC_DIAGTX1} as string,",
+				"          {\"\"\"Texto diagnóstico 2\"\"\"0HC_DIAGTX2:0HC_DIAGTX2} as string,",
+				"          {\"\"\"Descripción expl.\"\"\"1TXTLG0004:0TXTLG} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source2",
+				"source1, source2 union(byName: false)~> union1"
 			]
 		}
 	}
