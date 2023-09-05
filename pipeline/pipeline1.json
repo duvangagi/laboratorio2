@@ -137,7 +137,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Numero de documentode identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
+									"name": "Numero de documento",
 									"physicalType": "String"
 								}
 							},
