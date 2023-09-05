@@ -22,7 +22,163 @@
 		},
 		"schema": [
 			{
-				"name": "\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU|\"\"\"Sede de U.O.\"\"\"ZCSEDE:ZCSEDE|\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE|\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM|\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG|\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT|\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT|\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP|\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM|\"\"\"Nombre completo\"\"\"ZCNOMCO:ZCNOMCO|\"\"\"Sexo\"\"\"0GENDER:0GENDER|\"\"\"Fecha nacimiento\"\"\"0BIRTHDAY:0BIRTHDAY|\"\"\"Telefono 2\"\"\"ZCTELCELU:ZCTELCELU|\"\"\"Episodio\"\"\"0HC_PATCASE:0HC_PATCASE|\"\"\"Prestación\"\"\"0HC_SERVICE:0HC_SERVICE|\"\"\"Descripción breve\"\"\"1TXTSH:0TXTSH|\"\"\"Descripción expl.\"\"\"1TXTLG0002:0TXTLG|\"\"\"Fecha de la entrada\"\"\"0HC_CREDATE:ZCNIERDAT|\"\"\"Datos de fecha de una citación\"\"\"ZCTMNDT:0HC_DATEFRM|\"\"\"Hora de inicio\"\"\"0HC_TIMEFRM:0HC_TIMEFRM|\"\"\"Número de Autorización\"\"\"ZCAKTKZ:ZCAKTKZ|\"\"\"Nº correlativo de la prestación\"\"\"0HC_SRVSEQ:0HC_SRVSEQ|\"\"\"Codigo Aseguradora  (IS-H)\"\"\"0HC_INSPROV:0HC_INSPRMN|\"\"\"IC: Número identificación\"\"\"0BP_ID_NUM:0BP_ID_NUM|\"\"\"Nombre completo\"\"\"ZCNOMCO0002:ZCNOMCO|\"\"\"Descripción expl.\"\"\"1TXTLG0003:0TXTLG|\"\"\"Movimiento\"\"\"0HC_MOVEMNT:0HC_MOVEMNT|\"\"\"IS-H: Ind.edif.de una habitacion\"\"\"ZCZIMMR:ZCZIMMR|\"\"\"Indicador de anulación\"\"\"0STORNO:0STORNO|\"\"\"Tipo de movimiento\"\"\"0HC_MOVECTG:0HC_MOVECTG|\"\"\"Cl.movimiento\"\"\"0HC_MOVETP:0HC_MOVETP|\"\"\"Interlocutor comercial\"\"\"0HC_BPARTN:0HC_BPARTN|\"\"\"Unidad organizativa\"\"\"0HC_ORGUNIT:0HC_ORGUNIT|\"\"\"ESTADO\"\"\"EST:0TXTLG|\"\"\"ORIGEN_INF\"\"\"FUENTE:0TXTLG|\"\"\"Código de diagnóstico\"\"\"0HC_DIAGKEY:0HC_DIAGKEY|\"\"\"Complemento de diagnóstico\"\"\"0HC_DIAADDI:0HC_DIAADDI|\"\"\"Texto diagnóstico 1\"\"\"0HC_DIAGTX1:0HC_DIAGTX1|\"\"\"Texto diagnóstico 2\"\"\"0HC_DIAGTX2:0HC_DIAGTX2|\"\"\"Descripción expl.\"\"\"1TXTLG0004:0TXTLG",
+				"name": "\"\"\"Institución\"\"\"0HC_INSTITU:0HC_INSTITU",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Sede de U.O.\"\"\"ZCSEDE:ZCSEDE",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO:ZCNOMCO",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Sexo\"\"\"0GENDER:0GENDER",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Fecha nacimiento\"\"\"0BIRTHDAY:0BIRTHDAY",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Telefono 2\"\"\"ZCTELCELU:ZCTELCELU",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Episodio\"\"\"0HC_PATCASE:0HC_PATCASE",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Prestación\"\"\"0HC_SERVICE:0HC_SERVICE",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Descripción breve\"\"\"1TXTSH:0TXTSH",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0002:0TXTLG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Fecha de la entrada\"\"\"0HC_CREDATE:ZCNIERDAT",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Datos de fecha de una citación\"\"\"ZCTMNDT:0HC_DATEFRM",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Hora de inicio\"\"\"0HC_TIMEFRM:0HC_TIMEFRM",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Número de Autorización\"\"\"ZCAKTKZ:ZCAKTKZ",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Nº correlativo de la prestación\"\"\"0HC_SRVSEQ:0HC_SRVSEQ",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Codigo Aseguradora  (IS-H)\"\"\"0HC_INSPROV:0HC_INSPRMN",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"IC: Número identificación\"\"\"0BP_ID_NUM:0BP_ID_NUM",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Nombre completo\"\"\"ZCNOMCO0002:ZCNOMCO",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0003:0TXTLG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Movimiento\"\"\"0HC_MOVEMNT:0HC_MOVEMNT",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"IS-H: Ind.edif.de una habitacion\"\"\"ZCZIMMR:ZCZIMMR",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Indicador de anulación\"\"\"0STORNO:0STORNO",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Tipo de movimiento\"\"\"0HC_MOVECTG:0HC_MOVECTG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Cl.movimiento\"\"\"0HC_MOVETP:0HC_MOVETP",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Interlocutor comercial\"\"\"0HC_BPARTN:0HC_BPARTN",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Unidad organizativa\"\"\"0HC_ORGUNIT:0HC_ORGUNIT",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"ESTADO\"\"\"EST:0TXTLG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"ORIGEN_INF\"\"\"FUENTE:0TXTLG",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Código de diagnóstico\"\"\"0HC_DIAGKEY:0HC_DIAGKEY",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Complemento de diagnóstico\"\"\"0HC_DIAADDI:0HC_DIAADDI",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Texto diagnóstico 1\"\"\"0HC_DIAGTX1:0HC_DIAGTX1",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Texto diagnóstico 2\"\"\"0HC_DIAGTX2:0HC_DIAGTX2",
+				"type": "String"
+			},
+			{
+				"name": "\"\"\"Descripción expl.\"\"\"1TXTLG0004:0TXTLG",
 				"type": "String"
 			}
 		]
