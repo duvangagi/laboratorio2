@@ -71,8 +71,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Codigo Habilitacion de la Sede\"\"\"ZCCDHASE:ZCCDHASE",
-									"type": "String",
+									"name": "cod_habilita",
 									"physicalType": "String"
 								}
 							},
@@ -83,8 +82,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Nit de Aseguradora\"\"\"ZCTAXNUM:ZCTAXNUM",
-									"type": "String",
+									"name": "Aseguradora",
 									"physicalType": "String"
 								}
 							},
@@ -95,8 +93,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Descripción expl.\"\"\"1TXTLG:0TXTLG",
-									"type": "String",
+									"name": "Descripción expl",
 									"physicalType": "String"
 								}
 							},
@@ -107,8 +104,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Catálogo de prestaciones\"\"\"0HC_SRVCAT:0HC_SRVCAT",
-									"type": "String",
+									"name": "Catálogo de prestaciones",
 									"physicalType": "String"
 								}
 							},
@@ -119,8 +115,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Paciente\"\"\"0HC_PATIENT:0HC_PATIENT",
-									"type": "String",
+									"name": "Paciente",
 									"physicalType": "String"
 								}
 							},
@@ -131,8 +126,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Tipo de documento de identificacion\"\"\"ZCDOCTYP:ZCDOCTYP",
-									"type": "String",
+									"name": "Tipo de documento de identificacion",
 									"physicalType": "String"
 								}
 							},
@@ -143,8 +137,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "\"\"\"Numero de documento de identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
-									"type": "String",
+									"name": "Numero de documentode identificacion\"\"\"ZCDOCNUM:ZCDOCNUM",
 									"physicalType": "String"
 								}
 							},
