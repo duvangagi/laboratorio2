@@ -535,7 +535,7 @@
 				]
 			},
 			{
-				"name": "ate",
+				"name": "atenciones_02",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -547,8 +547,25 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "atenciones_02",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
