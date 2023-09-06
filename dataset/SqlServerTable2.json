@@ -1,0 +1,389 @@
+{
+	"name": "SqlServerTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "idRegistro",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idEPS",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strProgramaAutorizado",
+				"type": "varchar"
+			},
+			{
+				"name": "strTipoContratacion",
+				"type": "varchar"
+			},
+			{
+				"name": "idSubCuenta",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strNombreCaf",
+				"type": "varchar"
+			},
+			{
+				"name": "idProveedor",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intDigitoVerificacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idAmbito",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idFechaAutorizacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idFechaDispensacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strNumeroFormula",
+				"type": "varchar"
+			},
+			{
+				"name": "strNumeroAutorizacionProveedor",
+				"type": "varchar"
+			},
+			{
+				"name": "strTipoAutorizacion",
+				"type": "varchar"
+			},
+			{
+				"name": "idAfiliadoHistorico",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idGeografia",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idGenero",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idMedicoRemitente",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idDiagnostico",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strCodigoComercia",
+				"type": "varchar"
+			},
+			{
+				"name": "strCodigoGenerico",
+				"type": "varchar"
+			},
+			{
+				"name": "strCodigoAtc",
+				"type": "varchar"
+			},
+			{
+				"name": "strExpediente",
+				"type": "varchar"
+			},
+			{
+				"name": "strConsecutivo",
+				"type": "varchar"
+			},
+			{
+				"name": "idMedicamento",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strRegistroInvima",
+				"type": "varchar"
+			},
+			{
+				"name": "idFechaVigencia",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strEstado",
+				"type": "varchar"
+			},
+			{
+				"name": "strDescripcionAtc",
+				"type": "varchar"
+			},
+			{
+				"name": "strPrincipioActivo",
+				"type": "varchar"
+			},
+			{
+				"name": "strNombreComercial",
+				"type": "varchar"
+			},
+			{
+				"name": "strPOS",
+				"type": "varchar"
+			},
+			{
+				"name": "strRegulado",
+				"type": "varchar"
+			},
+			{
+				"name": "strFormaFarmaceutica",
+				"type": "varchar"
+			},
+			{
+				"name": "strConcentracion",
+				"type": "varchar"
+			},
+			{
+				"name": "strUnidadConcentracion",
+				"type": "varchar"
+			},
+			{
+				"name": "strUnidadMedida",
+				"type": "varchar"
+			},
+			{
+				"name": "strPresentacionComercial",
+				"type": "varchar"
+			},
+			{
+				"name": "strFracionable",
+				"type": "varchar"
+			},
+			{
+				"name": "strViaAdmon",
+				"type": "varchar"
+			},
+			{
+				"name": "strLaboratorio",
+				"type": "varchar"
+			},
+			{
+				"name": "numNumeroAutorizacion",
+				"type": "varchar"
+			},
+			{
+				"name": "idFechaFacturacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intCantidadAutorizada",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intCantidadDispensada",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intValorUnitario",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intValorTotal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intValorCuotaModeradora",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intPeriodo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idEstadoCitaActual",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idPrograma",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idPuntoAtencion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idServicio",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idFechaAsignacionCita",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idCumInvima",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "strArchivo",
+				"type": "varchar"
+			},
+			{
+				"name": "intFechaCargue",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idFechaCausacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idFechaReversaCausacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idAfiliado",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idTrabajador",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idParentesco",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "intFechaNacimiento",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strArchivoError",
+				"type": "varchar"
+			},
+			{
+				"name": "strOrigen",
+				"type": "varchar"
+			},
+			{
+				"name": "strEstadoPOS",
+				"type": "varchar"
+			},
+			{
+				"name": "strEstadoPC",
+				"type": "varchar"
+			},
+			{
+				"name": "intNumeroIdentificacion",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 0
+			},
+			{
+				"name": "IntTipoidentificacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NoRegistro",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Hoja_Excel",
+				"type": "varchar"
+			},
+			{
+				"name": "idDiagnosticoPrincipal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idProgramaVinculacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idProgramaDispensacion",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "strCohorte",
+				"type": "varchar"
+			},
+			{
+				"name": "idFechaCausacionDwh",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idGrupoEtareo",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "IdSedeMedicoPersonal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "idRedMedicoPersonal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "IdMedicoPersonal",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "IdEstadoAutorizacion",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "facMedicamentosDispensados"
+		}
+	}
+}
